@@ -1,10 +1,10 @@
 # [level Lv.0] 원하는 문자열 찾기 - 181878 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181878) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181878?language=python3) 
 
 ### 성능 요약
 
-메모리: 14.2 MB, 시간: 9.29 ms
+메모리: 10.3 MB, 시간: 0.07 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 1월 4일 20:42:4
+2024년 1월 4일 20:44:26
 
 ### 문제 설명
 
