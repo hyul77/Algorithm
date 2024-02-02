@@ -28,7 +28,9 @@ int main() {
 	long long x = 1;
 	for (int i = 0; i < S.size(); i++) {
 		ans += A[i] * x;
+		ans %= 1234567891;
 		x *= 31;
+		x %= 1234567891;
 	}
 	cout << ans << "\n";
 	
