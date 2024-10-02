@@ -1,53 +1,44 @@
 #include <iostream>
-#include <string>
 #include <vector>
-#include <map>
-#include <stack>
-#include <algorithm>
+#include <unordered_set>
 #include <set>
-#include <queue>
-#include <cmath> 
+#include <string>
+#include <algorithm>
 
 using namespace std;
 
-
-
 int main() {
-	ios::sync_with_stdio(false);
+	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
+
+	int N, M;
+	cin >> N >> M;
+
+	unordered_set<string> nolisten;
+	set<string>ans;
+
+	string name;
+
+	for (int i = 0; i < N; i++) {
+		cin >> name;
+		nolisten.insert(name);
+	}
+	int count = 0;
+	for (int i = 0; i < M; i++) {
+		cin >> name;
+		if (nolisten.find(name) != nolisten.end()) {
+			ans.insert(name);
+		}
+	}
+
+
+
+	cout << ans.size() << "\n";
+	for (const auto& s : ans) {
+		cout << s << "\n";
+	}
 	
-    int N, M;
-    cin >> N >> M;
 
-    set<string> unheard;
-    set<string> unseen;
-
-    for (int i = 0; i < N; ++i) {
-        string name;
-        cin >> name;
-        unheard.insert(name);
-    }
-
-    for (int i = 0; i < M; ++i) {
-        string name;
-        cin >> name;
-        unseen.insert(name);
-    }
-
-    vector<string> result;
-    for (const auto& name : unheard) {
-        if (unseen.find(name) != unseen.end()) {
-            result.push_back(name);
-        }
-    }
-
-    cout << result.size() << '\n';
-
-    sort(result.begin(), result.end());
-    for (const auto& name : result) {
-        cout << name << '\n';
-    }
-
-    return 0;
+	return 0;
 }
