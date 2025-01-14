@@ -17,12 +17,12 @@ int main() {
     }
 
     cin >> yn2 >> b;
-    if (yn2 == "Y" && a >= 37) {
+    if (yn2 == "Y" && b >= 37) {
         cnt++;
     }
 
     cin >> yn3 >> c;
-    if (yn3 == "Y" && a >= 37) {
+    if (yn3 == "Y" && c >= 37) {
         cnt++;
     }
 
