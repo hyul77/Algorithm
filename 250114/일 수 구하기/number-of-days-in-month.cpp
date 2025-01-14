@@ -9,10 +9,10 @@ int main() {
     if (n == 2) {
         cout << "28";
     }
-    else if (n % 2 == 0 & n != 8) {
+    else if (n % 2 == 0 && n != 8) {
         cout << "30";
     }
-    else if (n % 2 != 0) {
+    else {
         cout << "31";
     }
     return 0;
