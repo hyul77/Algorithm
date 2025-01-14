@@ -20,6 +20,9 @@ int main() {
         case 'C':
             cout << "Usually";
             break;
+        case 'D':
+            cout << "Effort";
+            break;
         default:
             cout << "Failure";
     }
